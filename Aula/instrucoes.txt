@@ -1,0 +1,93 @@
+## Ferramentas
+- Figma (figma.com)
+- Insomnia.rest
+- VSCode
+- Notion
+- Node
+- Expo
+- Express
+- Leaflet (mapbox)
+
+
+## criando projeto
+npx create react-app web --template typescript
+npm add react-icons    
+npm add react-router-dom
+npm install @types/react-router-dom
+
+
+## leaflet - biblioteca de mapas
+npm add leaflet react-leaflet
+npm install @types/react-leaflet
+
+Opcoes de mapa
+- https://a.tile.openstreetmap.org/{z}/{x}/{y}.png
+- https://account.mapbox.com/
+
+
+
+
+## EXPRESS
+mkdir backend
+cd backend
+npm add express
+npm install @types/express
+npm add typescript -D
+npx -p typescript tsc --init
+"target": "es2017",  
+npm install ts-node-dev
+npm run dev
+
+
+https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=pt-BR
+
+https://insomnia.rest/download/
+
+npm add typeorm sqlite3
+
+//Driver Nativo
+: Permite executar as querys direto pelo node, porem da forma correta do sql
+SELECT * FROM users WHERE name = 'Diego'
+
+// Query Builder
+: knex('users').select('*').where('name', 'Diego')
+
+// ORM
+: relacionamento com objeto javascript e tabela no banco
+tabela users no banco vai ser o objeto User no js
+
+
+// criar o arquivo da tabela
+npm run typeorm migration:create -- -n create_orfanatos
+
+// cria de fato
+npm run typeorm migration:run
+
+
+// desfaz a criação no banco
+npm run typeorm migration:revert
+
+// visualizar os dados do sqlite
+https://www.beekeeperstudio.io/
+
+
+
+
+## biblioteca de imagens
+npm install multer
+npm install @types/multer
+
+## para pegar erros nas funcoes asyncs
+npm install express-async-errors
+
+## modulo de validação de dados
+npm install yup
+npm install @types/yup
+
+## cors
+npm install cors
+npm install @types/cors
+
+## axios
+npm install axios
+
